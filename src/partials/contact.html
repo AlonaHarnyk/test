@@ -1,16 +1,25 @@
 <section class="contact">
-    <div class="container">
-        <h2 class="contact__title title">Contact</h2>
-        <p class="contact__text">We will answer any question!</p>
-        <form>
-            <div class="contact__field">
-                <input class="contact__input" type="email" autocomplete="off" id="contact-email" placeholder="Email" required>
-            </div>
-            <div class="contact__field">
-                <input class="contact__input" type="text" autocomplete="off" id="contact-question" placeholder="Type your question"
-                    required>
-            </div>
-            <button class="contact__button button-style" type="submit">Send</button>
-        </form>
-    </div>
+  <div class="container contact__container">
+    <h2 class="title title--size">Contact</h2>
+    <p class="text text--size contact__text">We will answer any question!</p>
+    <form class="form contact__form">
+      <input
+        type="email"
+        name="mail"
+        placeholder="Email"
+        autocomplete="on"
+        required
+        class="form__input"
+      />
+      <input
+        type="text"
+        name="question"
+        placeholder="Type your question"
+        pattern="^[A-Za-z\s]+$"
+        required
+        class="form__input"
+      />
+      <button type="submit" class="button form__button">Send</button>
+    </form>
+  </div>
 </section>

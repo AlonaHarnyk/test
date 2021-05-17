@@ -1,12 +1,10 @@
-﻿@import './utils/variables';
-@import './base/common';
-@import './base/container';
+@import './vendors/modern-normalize';
 
-@import './layouts/header';
-@import './layouts/menu';
+@import './base/base';
+
+@import './components/button';
+@import './components/form';
+
 @import './layouts/about-us';
 @import './layouts/program';
-@import './layouts/reviews';
-@import './layouts/registration';
 @import './layouts/contact';
-@import './layouts/footer';
