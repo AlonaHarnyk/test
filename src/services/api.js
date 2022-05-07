@@ -6,7 +6,6 @@ const ApiKey = '71232cc02b0a0eb890148f92fc2f7287';
 export async function getTrending() {
   const response = await axios.get(`trending/all/day?api_key=${ApiKey}`);
   return response.data;
-  // test
 }
 
 export async function getMovieDetails(id) {
